@@ -8,6 +8,7 @@ var video, url, videoTexture;
 var canPlayMp4, canPlayOgg;
 var lastTimeMsec, deltaMsec; 
 
+
 var mouse = new THREE.Vector2(), INTERSECTED;
 var raycaster;
 
@@ -54,7 +55,8 @@ camera.position.z = 3;
 
 /* make video texture */
 video = document.getElementById( 'video' );
-enableInlineVideo(video);
+//enableInlineVideo(video);
+video.play()
 videoTexture = new THREE.VideoTexture( video );
 videoTexture.minFilter = THREE.LinearFilter;
 videoTexture.magFilter = THREE.LinearFilter;
@@ -105,9 +107,9 @@ function onWindowResize() {
   renderer.setSize( window.innerWidth, window.innerHeight );
 }
 /* button commands */
-function onVideoPlayButtonClick(){ 
+/*function onVideoPlayButtonClick(){ 
   video.play() 
 }
 function onVideoPauseButtonClick(){
   video.pause()
-}
+}*/

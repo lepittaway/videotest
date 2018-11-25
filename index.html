@@ -5,6 +5,7 @@
   <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
   <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
   <script src="src/VideoTexture.js"></script>
+<script src="src/iphone-inline-video.min.js"></script>
 
 
 <div style='position: absolute; top: 0px; width: 100%;font-family:arial; font-weight: bolder; padding-top: 5px;'>
@@ -12,7 +13,7 @@
 	<button onclick='onVideoPauseButtonClick()'>pause</button>
 </div>
 <body style='margin: 0px; overflow: hidden; text-align:center;'>
-  <video id="video" autoplay loop crossOrigin="anonymous" playsinline style="display:none">
+  <video id="video" autoplay muted playsinline crossOrigin="anonymous" style="display:none">
 			<source src="https://threejs.org/examples/textures/sintel.ogv" type='video/ogg; codecs="theora, vorbis"'>
 			<source src="https://threejs.org/examples/textures/sintel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 		</video>
