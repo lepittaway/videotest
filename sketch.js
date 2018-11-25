@@ -58,6 +58,8 @@ videoTexture = new THREE.VideoTexture( video );
 videoTexture.minFilter = THREE.LinearFilter;
 videoTexture.magFilter = THREE.LinearFilter;
 videoTexture.format = THREE.RGBFormat;
+  
+  video.play();
 
 /* make screen */
 var geometry = new THREE.CubeGeometry(2,1.1,0.01);
@@ -104,9 +106,9 @@ function onWindowResize() {
   renderer.setSize( window.innerWidth, window.innerHeight );
 }
 /* button commands */
-function onVideoPlayButtonClick(){ 
+/*function onVideoPlayButtonClick(){ 
   video.play() 
 }
 function onVideoPauseButtonClick(){
   video.pause()
-}
+}*/
