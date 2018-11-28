@@ -1,15 +1,14 @@
 <!DOCTYPE html>
+<html lang="en">
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-
- <script src='build/three.min.js'></script>
+  <script src='build/three.min.js'></script>
   <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
   <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
   <script src="src/VideoTexture.js"></script>
-<script src="src/iphone-inline-video.min.js"></script>
-
-
-<div style='position: absolute; top: 0px; width: 100%;font-family:arial; font-weight: bolder; padding-top: 5px;'>
-	<button onclick='onVideoPlayButtonClick()'>play</button>
+  <script src="src/iphone-inline-video.min.js"></script>
+  <div style='position: absolute; top: 0px; width: 100%;font-family:arial; font-weight: bolder; padding-top: 5px;'>
+    <button onclick='toggleMute()'>sound on</button>
+    <button onclick='onVideoPlayButtonClick()'>play</button>
 	<button onclick='onVideoPauseButtonClick()'>pause</button>
 </div>
 <body style='margin: 0px; overflow: hidden; text-align:center;'>
